@@ -1,0 +1,315 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22622) 64bit Professional' Language: 'en' Physical Memory: 32689 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Development/MiniProject-Noah/MiniProject
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+62461
+Successfully changed project path to: C:/Development/MiniProject-Noah/MiniProject
+C:/Development/MiniProject-Noah/MiniProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 105.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Development/MiniProject-Noah/MiniProject/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 5700 XT (ID=0x731f)
+    Vendor:   ATI
+    VRAM:     8151 MB
+    Driver:   31.0.12027.2005
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008085 seconds.
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 91.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.688 seconds
+Domain Reload Profiling:
+	ReloadAssembly (688ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (462ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (281ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (56ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (90ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006001 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.112 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1113ms)
+		BeginReloadAssembly (227ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (131ms)
+		EndReloadAssembly (784ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (238ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (361ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.8 KB). Loaded Objects now: 3840.
+Memory consumption went from 119.3 MB to 119.2 MB.
+Total: 3.700000 ms (FindLiveObjects: 0.425400 ms CreateObjectMapping: 0.098900 ms MarkObjects: 3.052800 ms  DeleteObjects: 0.121600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 164357.633702 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(bcb62a5e5bb4b674dae8512a606c5e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(bcb62a5e5bb4b674dae8512a606c5e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e828f322bc2aba12fc8c3bfaf8d429e') in 0.044475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 125.838699 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.005878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.550929 seconds.
+  path: Assets/PolygonDungeon
+  artifactKey: Guid(ae4463ff90b37e945bd74b3f03c7e8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon using Guid(ae4463ff90b37e945bd74b3f03c7e8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4673d4bf5d0c9506dad8e8bcf62adce2') in 0.005887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.938964 seconds.
+  path: Assets/Fantasy Forest Environment Free Sample/Textures
+  artifactKey: Guid(9fcce063c50b58049b8c0bb17dc31ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Forest Environment Free Sample/Textures using Guid(9fcce063c50b58049b8c0bb17dc31ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4e5f4b943613faac09de4d0e12b839') in 0.005769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.541925 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeon_Fog_Breakup.tga
+  artifactKey: Guid(188986f6af92a334c8b22f1bb58d2b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeon_Fog_Breakup.tga using Guid(188986f6af92a334c8b22f1bb58d2b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a46d1ba6db99580325904dc19fb0b5') in 0.065171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_03.png
+  artifactKey: Guid(799cb419e1c152a489f0053a612f9d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_03.png using Guid(799cb419e1c152a489f0053a612f9d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6eee8c6aa13b1d0ae98b1d67d512e7') in 0.049549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PolygonDungeon/Textures/Emmisive/Emmisive_03.png
+  artifactKey: Guid(d05f150f4dc22c346be2f63a0e655d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Emmisive/Emmisive_03.png using Guid(d05f150f4dc22c346be2f63a0e655d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650077b3b33ebbad71e156bcc2f8068f') in 0.026734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_B.png
+  artifactKey: Guid(f2a001e91ce41ae45998592e5a689d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_B.png using Guid(f2a001e91ce41ae45998592e5a689d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d8b16fe2a15f7256ca060d22ef30bb') in 0.013011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_01.png
+  artifactKey: Guid(7b6e8693e1d992d42b4e4e946a43e145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_01.png using Guid(7b6e8693e1d992d42b4e4e946a43e145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd57f4d102bb989e9a50d8a426ef4efdc') in 0.017788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_04.png
+  artifactKey: Guid(735fd3feaf9a6664c907219593c835d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_04.png using Guid(735fd3feaf9a6664c907219593c835d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6fb2d21745119c7383b9f52802bd36') in 0.018537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_mask.png
+  artifactKey: Guid(24a5587de2eb8e247b6aa8c26aba8954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_mask.png using Guid(24a5587de2eb8e247b6aa8c26aba8954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e154d314cb75bd31392aaebcc1bd38a') in 0.015644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PolygonDungeon/Textures/Emmisive/Emmisive_01.png
+  artifactKey: Guid(91ec928f471bba747ad8c1a981051402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Emmisive/Emmisive_01.png using Guid(91ec928f471bba747ad8c1a981051402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3d263f8ecbc05e4acdeb5e1a1754fb') in 0.018730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_03.png
+  artifactKey: Guid(f32ef10807da6b34181c4cebaeaea003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_03.png using Guid(f32ef10807da6b34181c4cebaeaea003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9003eff8ae3407463e77e059d3f9b566') in 0.015443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_Normal.png
+  artifactKey: Guid(4d8e7be369dd9f74da8b602c3f10c3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_Normal.png using Guid(4d8e7be369dd9f74da8b602c3f10c3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9191acb8d4c7064e39a547e8a7476fb6') in 0.080536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_01.png
+  artifactKey: Guid(04c738e82af2a96438356f3111b4fa6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_WallTiles_01.png using Guid(04c738e82af2a96438356f3111b4fa6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6e071d96de0a7c83690583ac506f647') in 0.026444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_Ghosts.tif
+  artifactKey: Guid(7c0ff09a380398147ae5ac1ca6cb3d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_Ghosts.tif using Guid(7c0ff09a380398147ae5ac1ca6cb3d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af94dcc0c3c9bf8066ee1e89bfa739d9') in 0.027872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_A.png
+  artifactKey: Guid(f5091d7101c57414f9e80ac6f576f9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_03_A.png using Guid(f5091d7101c57414f9e80ac6f576f9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c8e17a7aed1a0dbccf78908cca43be') in 0.023243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/PolygonDungeon/Textures/Emmisive/Emmisive_02.png
+  artifactKey: Guid(8c7dd9c3365f19d4c995f92c3932d3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Emmisive/Emmisive_02.png using Guid(8c7dd9c3365f19d4c995f92c3932d3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18179d62d6d9d4e5a9dcf5d5c8c42880') in 0.033830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_mask.png
+  artifactKey: Guid(2e7da44e17f80444984517112e28bb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Misc/Dungeons_Texture_FloorTiles_mask.png using Guid(2e7da44e17f80444984517112e28bb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f1512bf4fb2d966e2d8656e8fc1dc3') in 0.022535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_C.png
+  artifactKey: Guid(2f813ab06deb9894fa1df3f6afa64289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_04_C.png using Guid(2f813ab06deb9894fa1df3f6afa64289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83785e25ff3e1043e211618905270714') in 0.019309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_C.png
+  artifactKey: Guid(5cc82904a6e45f842ab36cf805c89fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_C.png using Guid(5cc82904a6e45f842ab36cf805c89fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0b9a0f37c030fe3f9ca8c90c0e067b') in 0.024641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/PolygonDungeon/Textures/Dungeons_Texture_04.png
+  artifactKey: Guid(e2470a432baf43f4b9602fe6cb1753ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Dungeons_Texture_04.png using Guid(e2470a432baf43f4b9602fe6cb1753ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda31afaec4d8203f374c94cb3a2fade') in 0.017219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_B.png
+  artifactKey: Guid(7cd840983f1fee34ea83d3a281e39017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_02_B.png using Guid(7cd840983f1fee34ea83d3a281e39017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ca2ffd279478b61b28a1d00acdd7d7') in 0.015506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_C.png
+  artifactKey: Guid(84991b099ef2b2f448c89be08a27a0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonDungeon/Textures/Alternatives/Dungeons_Texture_01_C.png using Guid(84991b099ef2b2f448c89be08a27a0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e9f9b29e6c63516624e85c3970b6b9') in 0.016279 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
