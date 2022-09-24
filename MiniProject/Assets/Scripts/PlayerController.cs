@@ -101,6 +101,10 @@ public class PlayerController : MonoBehaviour
 
     void RotateTowardsMovement(Vector3 newPos)
     {
+        if(newPos == model.transform.position)
+        {
+            newPos = cam.transform.position;
+        }
         newPos.y = model.transform.position.y;
         Quaternion rotation = model.transform.rotation;
 

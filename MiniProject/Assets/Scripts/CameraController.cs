@@ -16,6 +16,10 @@ public class CameraController : MonoBehaviour
     public float cameraHeight = 8;
     public float cameraDistance = 10;
 
+    private void Start()
+    {
+    }
+
     void Update()
     {
         ZoomWithScroll();
@@ -67,6 +71,8 @@ public class CameraController : MonoBehaviour
             {
                 cameraHeight = 30;
             }
+
+            //RotateTowardsPlayer();
         }
     }
 
@@ -97,10 +103,22 @@ public class CameraController : MonoBehaviour
         Vector3 target = playerModel.transform.position;
         
 
-        Vector3 temp = newPosition;
-        temp.y = target.y;
 
-        Vector3 dir = (target - temp).normalized;
+
+        Vector3 dir;
+        if (rotateCamera)
+        {
+            Vector3 temp = newPosition;
+            temp.y = target.y;
+
+            dir = (target - temp).normalized;
+        }
+        else
+        {
+            dir = transform.forward;
+            dir.y = 0;
+        }
+        
         newPosition = target - (dir * cameraDistance);
         newPosition.y = target.y + cameraHeight;
 
