@@ -27,12 +27,10 @@ public class CameraController : MonoBehaviour
         {
             RotateWithMouse();
         }
-        if (rotateCamera)
-        {
-            RotateTowardsPlayer();
-        }
-        
+
         MoveTowardsPlayer();
+        RotateTowardsPlayer();
+        
     }
 
     void ZoomWithScroll()
@@ -91,7 +89,6 @@ public class CameraController : MonoBehaviour
 
         Vector3 direction = target - transform.position;
         var lookRotation = Quaternion.LookRotation(direction);
-
 
         rotation = Quaternion.Slerp(rotation, lookRotation, Time.deltaTime * autoRotateSpeed);
         transform.rotation = rotation;

@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed = 1;
     public float jumpHeight = 5;
+    public float jumpCooldown = 1;
+    public float jumpSpeedModifier = 0.7f;
     public float sprintModifier = 2;
 
     public Camera cam;
@@ -25,6 +27,10 @@ public class PlayerController : MonoBehaviour
 
 
     private float _jump = 0;
+    private float _jumpTime = 0;
+
+    private bool testAxis_Jump = false;
+
     void Start()
     {
         if (cam == null)
@@ -70,10 +76,17 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector3 move = Vector3.zero;
-        if(Input.GetAxis("Jump") != 0 && model.GetComponent<CharacterController>().isGrounded)
+        if(Input.GetAxis("Jump") != 0 && model.GetComponent<CharacterController>().isGrounded && _jump == 0 && _jumpTime < Time.time - jumpCooldown )
         {
+            model.animatorState = PlayerModel.AnimatorState.JUMP;
             _jump = Input.GetAxis("Jump") * jumpHeight;
+            _jumpTime = Time.time;
+            testAxis_Jump = true;
+        }
 
+        if (Input.GetAxis("Jump") == 0 && testAxis_Jump)
+        {
+            testAxis_Jump = false;
         }
 
         move += Vector3.up * _jump * Time.deltaTime;
@@ -117,6 +130,11 @@ public class PlayerController : MonoBehaviour
         else if(model.GetComponent<CharacterController>().isGrounded)
         {
             model.animatorState = PlayerModel.AnimatorState.IDLE;
+        }
+
+        if (!model.GetComponent<CharacterController>().isGrounded)
+        {
+            move *= jumpSpeedModifier;
         }
 
         RotateTowardsMovement(model.transform.position + move);
