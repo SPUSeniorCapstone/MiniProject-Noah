@@ -17,6 +17,15 @@ public class GameController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             paused = !paused;
+            if (paused)
+            {
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+            }
+            
         }
     }
 }

@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public PlayerModel model;
     public Terrain terrain;
     public AudioSource audioSource;
+    public GameController gc;
 
     [SerializeField]
     public bool useRigidbody
@@ -47,13 +48,16 @@ public class PlayerController : MonoBehaviour
             model.controller = this;
         }
 
+        gc = FindObjectOfType<GameController>();
+
         audioSource = model.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        HandelInput();
+        if(!gc.Paused)
+            HandelInput();
     }
 
     void HandelInput()
