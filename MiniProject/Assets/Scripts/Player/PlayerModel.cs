@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class PlayerModel : MonoBehaviour
 {
@@ -26,10 +27,19 @@ public class PlayerModel : MonoBehaviour
         JUMP = 3
     }
 
+    public List<AudioClip> clips;
+
+    private AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        if(clips == null || clips.Count == 0)
+        {
+            Debug.LogError("No Audio Clips were given");
+        }
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,11 +50,19 @@ public class PlayerModel : MonoBehaviour
 
     private void SetState(AnimatorState s)
     {
-        if(_lockedTill > Time.time) { return; }
+        if (_lockedTill > Time.time) { return; }
 
         if (s == _state) return;
         _lockedTill = Time.time + GetStateTransitionTime(s);
         _state = s;
+
+        var c = clips.Find(clip => (clip.name == GetStateString(s)));
+        if(c != null)
+        {
+            source.clip = c;
+            source.Play();
+        }
+
         animator.CrossFade(GetStateString(s), 0.01f, 0);
     }
 
