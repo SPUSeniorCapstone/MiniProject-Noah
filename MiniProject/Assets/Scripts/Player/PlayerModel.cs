@@ -29,7 +29,7 @@ public class PlayerModel : MonoBehaviour
 
     public List<AudioClip> clips;
 
-    private AudioSource source;
+    private List<AudioSource> sources;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +39,7 @@ public class PlayerModel : MonoBehaviour
         {
             Debug.LogError("No Audio Clips were given");
         }
-        source = GetComponent<AudioSource>();
+        LoadAudioSources();
     }
 
     // Update is called once per frame
@@ -59,8 +59,8 @@ public class PlayerModel : MonoBehaviour
         var c = clips.Find(clip => (clip.name == GetStateString(s)));
         if(c != null)
         {
-            source.clip = c;
-            source.Play();
+            sources[0].clip = c;
+            sources[0].Play();
         }
 
         animator.CrossFade(GetStateString(s), 0.01f, 0);
@@ -90,5 +90,10 @@ public class PlayerModel : MonoBehaviour
         if (s == AnimatorState.JUMP) { return 0.7f; }
 
         return 0f;
+    }
+
+    private void LoadAudioSources()
+    {
+        sources = GetComponents<AudioSource>().ToList();
     }
 }

@@ -15,7 +15,7 @@ C:/Development/MiniProject-Noah/MiniProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52259
+54741
 Successfully changed project path to: C:/Development/MiniProject-Noah/MiniProject
 C:/Development/MiniProject-Noah/MiniProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Development/MiniProject-Noah/MiniProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 128.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 121.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,78 +63,78 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56196
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008143 seconds.
+Registered in 0.004990 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 171.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 116.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.917 seconds
+- Completed reload, in  0.740 seconds
 Domain Reload Profiling:
-	ReloadAssembly (918ms)
-		BeginReloadAssembly (81ms)
+	ReloadAssembly (741ms)
+		BeginReloadAssembly (69ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (713ms)
-			LoadAssemblies (79ms)
+		EndReloadAssembly (557ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (143ms)
+			SetupTypeCache (103ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (466ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (371ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (172ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (228ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
+				RefreshPlugins (117ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007713 seconds.
+Registered in 0.006211 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.281 seconds
+- Completed reload, in  1.036 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1282ms)
-		BeginReloadAssembly (152ms)
+	ReloadAssembly (1036ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (987ms)
-			LoadAssemblies (97ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (817ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (334ms)
+			SetupTypeCache (264ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (69ms)
-			SetupLoadedEditorAssemblies (438ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (381ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (297ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -142,13 +142,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3433 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (56.3 KB). Loaded Objects now: 3912.
+Unloading 3434 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (56.4 KB). Loaded Objects now: 3913.
 Memory consumption went from 134.9 MB to 134.8 MB.
-Total: 2.990800 ms (FindLiveObjects: 0.275900 ms CreateObjectMapping: 0.197200 ms MarkObjects: 2.433200 ms  DeleteObjects: 0.083300 ms)
+Total: 3.550800 ms (FindLiveObjects: 0.290800 ms CreateObjectMapping: 0.227000 ms MarkObjects: 2.852200 ms  DeleteObjects: 0.179400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,49 +163,49 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005612 seconds.
+Registered in 0.005408 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.026 seconds
+- Completed reload, in  1.146 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1026ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (1147ms)
+		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (781ms)
-			LoadAssemblies (83ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (898ms)
+			LoadAssemblies (81ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (297ms)
+			SetupTypeCache (341ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (313ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (356ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (205ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3413 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3915.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3916.
 Memory consumption went from 133.3 MB to 133.3 MB.
-Total: 2.824300 ms (FindLiveObjects: 0.247500 ms CreateObjectMapping: 0.151800 ms MarkObjects: 2.403700 ms  DeleteObjects: 0.020400 ms)
+Total: 2.825700 ms (FindLiveObjects: 0.242700 ms CreateObjectMapping: 0.135300 ms MarkObjects: 2.421700 ms  DeleteObjects: 0.024900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -219,394 +219,643 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 28308.733664 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Body Drop 2.wav
-  artifactKey: Guid(7a8ab167e094d404ca3b19cef5a94e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Body Drop 2.wav using Guid(7a8ab167e094d404ca3b19cef5a94e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b688de6109d13559f5885a838e78debc') in 0.205091 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 4.wav
-  artifactKey: Guid(730a32603acd2b44782dd6c2adb768bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 4.wav using Guid(730a32603acd2b44782dd6c2adb768bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e81950c392544536738d6eb2be646b') in 0.031471 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (18).wav
-  artifactKey: Guid(b187bdb1e738c874894684f65f25b996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (18).wav using Guid(b187bdb1e738c874894684f65f25b996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f9e138c7fbdbe5563a0f86623c27d2') in 0.029337 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Kick 3.wav
-  artifactKey: Guid(63ea78242a8570349b0444f4d0470fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Kick 3.wav using Guid(63ea78242a8570349b0444f4d0470fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e6b77dffbfe6d6b7c124cba9b64b75d') in 0.027460 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (20).wav
-  artifactKey: Guid(80657bd3aee59be48ab2860785c95d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (20).wav using Guid(80657bd3aee59be48ab2860785c95d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51fc62a8f8dc5808d47b8cfbfa977e11') in 0.031805 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (4).wav
-  artifactKey: Guid(b6992463d057884419abd7787e2fd218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (4).wav using Guid(b6992463d057884419abd7787e2fd218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b159a4781f216a9c1fb2440fa70a777') in 0.026031 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (2).wav
-  artifactKey: Guid(612f742e5b7b83345a0eabdb03117665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (2).wav using Guid(612f742e5b7b83345a0eabdb03117665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06ea34b147768a8a9a16e45e08dfc8d') in 0.024788 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (10).wav
-  artifactKey: Guid(5761b9e38203b9b40ae26116658983eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (10).wav using Guid(5761b9e38203b9b40ae26116658983eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f9a5b058de2844d2df9e37a0c356ac') in 0.025403 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (11).wav
-  artifactKey: Guid(43cf24515a8c5664e9386a304780af93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (11).wav using Guid(43cf24515a8c5664e9386a304780af93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b910a1f437a303bb432dddc16eb201') in 0.026604 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Kick 6.wav
-  artifactKey: Guid(77f138d4ff350be4b8e56d49b1ab2c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Kick 6.wav using Guid(77f138d4ff350be4b8e56d49b1ab2c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bbc2851f752f5b724e6c3ba825518eb') in 0.024744 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (19).wav
-  artifactKey: Guid(aeb2e54cc11f0374d810ded46e9a531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (19).wav using Guid(aeb2e54cc11f0374d810ded46e9a531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cab7eb822d5bbef7165d15e3ce83978') in 0.034314 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (3).wav
-  artifactKey: Guid(519c626e2c5efd74a85eae451c74914a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (3).wav using Guid(519c626e2c5efd74a85eae451c74914a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd8cc29f6060f4ced8b762dbbc04bea') in 0.030583 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (7).wav
-  artifactKey: Guid(61904fc2b5575ba48af614e54c73b57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (7).wav using Guid(61904fc2b5575ba48af614e54c73b57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b7b7635473a7a8a640ecedaf7418bd') in 0.030888 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Kick 3.wav
-  artifactKey: Guid(b135c9c8c9f147a42be8351933c1d309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Kick 3.wav using Guid(b135c9c8c9f147a42be8351933c1d309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f9756f9116d3d67cb02c8c9386d3e2') in 0.028075 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Kick 5.wav
-  artifactKey: Guid(b30e8a32a4858cf4dbdd54886e0bd115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Kick 5.wav using Guid(b30e8a32a4858cf4dbdd54886e0bd115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c455ff7fe1b41b113a7fd3c1d345687') in 0.026124 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Kick 4.wav
-  artifactKey: Guid(7cfb472da3b664647a975dbdc2adf789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Kick 4.wav using Guid(7cfb472da3b664647a975dbdc2adf789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffbc55d29c2e635f4b8e8000a6d892a') in 0.026026 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (14).wav
-  artifactKey: Guid(affeec08f4ba8264d8940ada81b41d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (14).wav using Guid(affeec08f4ba8264d8940ada81b41d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba30c902237f664486f68dcfc7a3c3f7') in 0.027131 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Body Drop 4.wav
-  artifactKey: Guid(ecf758e93b41127458c62172cb046729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Body Drop 4.wav using Guid(ecf758e93b41127458c62172cb046729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbec1abb4419212356f971637408761d') in 0.025456 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Grunt 1.wav
-  artifactKey: Guid(3054426a5c150a24eaacf7b60ad163ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Grunt 1.wav using Guid(3054426a5c150a24eaacf7b60ad163ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12c92da97e735abcae6a3a908d94250d') in 0.024363 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Kick 4.wav
-  artifactKey: Guid(42c579431b9aec74c8d689488d3cd6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Kick 4.wav using Guid(42c579431b9aec74c8d689488d3cd6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5006c9b28294202ea76ed1e1a699fef') in 0.026269 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Body Drop 3.wav
-  artifactKey: Guid(83830c530d8b59d4e8b6a553875dd247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Body Drop 3.wav using Guid(83830c530d8b59d4e8b6a553875dd247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b39f833f97e31d18d59da96e5b62723') in 0.027187 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (15).wav
-  artifactKey: Guid(e6a80c1f856319241a0095a74ef27925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Punch (15).wav using Guid(e6a80c1f856319241a0095a74ef27925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140f217131581018028d9c139ef53fcc') in 0.028271 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Kick 2.wav
-  artifactKey: Guid(ab5461bfa3c73a04ebe3bc254b247058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Game Kick 2.wav using Guid(ab5461bfa3c73a04ebe3bc254b247058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e41e04690a48545364af33bc1d60fc') in 0.025341 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 11.wav
-  artifactKey: Guid(06d99a6124d47fa4390a14ab234d46a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 11.wav using Guid(06d99a6124d47fa4390a14ab234d46a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec9d4d9dc42e64058bcbcad09715fca') in 0.026493 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.432952 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 13.wav
-  artifactKey: Guid(d9164c92e1abdef4fa24c25c57acd25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 13.wav using Guid(d9164c92e1abdef4fa24c25c57acd25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1253d26860897681ce2cc6a23f730d7') in 0.032340 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Kick 3.wav
-  artifactKey: Guid(53d850daf6f4db640aa02d3b16c68d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Kick 3.wav using Guid(53d850daf6f4db640aa02d3b16c68d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21676b4517100e2ec90ca783760f8e7e') in 0.026741 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 15.wav
-  artifactKey: Guid(1f9641a4975c4c64dbece24c24a2fec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 15.wav using Guid(1f9641a4975c4c64dbece24c24a2fec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9280d4d7b5319ebe1f6ef78da3587ec3') in 0.025721 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Kick 1.wav
-  artifactKey: Guid(2ba5723edc61f84428d9c60143d7fbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Kick 1.wav using Guid(2ba5723edc61f84428d9c60143d7fbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd348d094c20c0abd4fce1ff61ade2a0b') in 0.027943 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Kick 4.wav
-  artifactKey: Guid(0b40f9310903161479fdd097723ab665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Kick 4.wav using Guid(0b40f9310903161479fdd097723ab665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cbefc3e517905288be213eafd2658fa') in 0.027350 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Kick 5.wav
-  artifactKey: Guid(aea888f34d043f040b286e3cf596d43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Kick 5.wav using Guid(aea888f34d043f040b286e3cf596d43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd883a6d66d33e50609235c4576c3d5d') in 0.030464 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 17.wav
-  artifactKey: Guid(1da9c36e72b9bab4398cc076fcc73296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 17.wav using Guid(1da9c36e72b9bab4398cc076fcc73296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84a0401cd4538d1752cea25d12d1db0') in 0.029521 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 14.wav
-  artifactKey: Guid(41d93a5e710371b4ea671ce28df52216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 14.wav using Guid(41d93a5e710371b4ea671ce28df52216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47d87390135f8f21dd37512e83823f4') in 0.029817 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 20.wav
-  artifactKey: Guid(92126a9324900fc4980420f47bf62f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 20.wav using Guid(92126a9324900fc4980420f47bf62f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '969e1aecaf3a101b50280f2daa26b0eb') in 0.033511 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 13.wav
-  artifactKey: Guid(8329f1d5bb2b2ef4797904dd7d29ad1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 13.wav using Guid(8329f1d5bb2b2ef4797904dd7d29ad1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d8b113f06f2b03f888b32ed7ca2e90') in 0.031897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 19.wav
-  artifactKey: Guid(3124323f62b461347af0c131b62b35f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 19.wav using Guid(3124323f62b461347af0c131b62b35f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e208e529606fa74de8cf07cf664d78') in 0.034185 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 9.wav
-  artifactKey: Guid(b623a7ff593451046a15cf50afd7431c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 9.wav using Guid(b623a7ff593451046a15cf50afd7431c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f97954f80e075a0cd18730d5e8ce05') in 0.027603 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 1.wav
-  artifactKey: Guid(eff9711781071d44fa9b84e4acf6da45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 1.wav using Guid(eff9711781071d44fa9b84e4acf6da45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6d2e706fe2fc0ef20056e4cd4a25bd') in 0.027432 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Jump 2.wav
-  artifactKey: Guid(88ac55dc347e88c4b9ccfab9525f6e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Jump 2.wav using Guid(88ac55dc347e88c4b9ccfab9525f6e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e840b0e16be4ab34c1712e777ce81cbd') in 0.030356 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 7.wav
-  artifactKey: Guid(fc7a365a0451219438654c79e287618c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 7.wav using Guid(fc7a365a0451219438654c79e287618c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c834bbb7ee48b4356afd8ac3113366') in 0.030273 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 18.wav
-  artifactKey: Guid(a058709f101958945921c14e17fa4a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 18.wav using Guid(a058709f101958945921c14e17fa4a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1379196ab5e9d7c69186ba37bdaf1a6') in 0.034443 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 10.wav
-  artifactKey: Guid(89c18ec2f775ca04199158104f81355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Realistic Punch 10.wav using Guid(89c18ec2f775ca04199158104f81355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4473d4b4b07bf2e0a9e7a7b3e24ed9fa') in 0.027087 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 18.wav
-  artifactKey: Guid(53edfe7dd9f47de43bf75b4999e53eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Heavy Game Punch 18.wav using Guid(53edfe7dd9f47de43bf75b4999e53eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aab669ec85252829e5a3a9ab8ef9918') in 0.028857 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.130531 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Jump 4.wav
-  artifactKey: Guid(b33043fe04f3be6409fef5e3a6e82f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Jump 4.wav using Guid(b33043fe04f3be6409fef5e3a6e82f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b5c9f08b9525da93008a6650d8b871') in 0.026025 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Jump 5.wav
-  artifactKey: Guid(18a7013bc5590e747a287a1aae66b4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Jump 5.wav using Guid(18a7013bc5590e747a287a1aae66b4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a461a19c884f35b9d310cd9f533e0740') in 0.032911 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realisitc Kick 2.wav
-  artifactKey: Guid(2338853d8da56f446be9388c9152073e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realisitc Kick 2.wav using Guid(2338853d8da56f446be9388c9152073e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f16f6f41fe395aa4d0169eb666cb6a27') in 0.037269 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 7.wav
-  artifactKey: Guid(e4e65c0933bcb5443a8f015f7c365b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 7.wav using Guid(e4e65c0933bcb5443a8f015f7c365b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f847e02324d238c3df1b24cd888116f1') in 0.039815 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 17.wav
-  artifactKey: Guid(d85f47f01d5641a4e9d9f5739c85ad89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 17.wav using Guid(d85f47f01d5641a4e9d9f5739c85ad89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cafb14d05d93e5fc9bfe7090036ee502') in 0.024823 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 4.wav
-  artifactKey: Guid(177e5e338357c70438e9e2b80141434d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 4.wav using Guid(177e5e338357c70438e9e2b80141434d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b282ae82fdd9ff73f1de465bd501113') in 0.022996 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.006531 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Swing 1.wav
-  artifactKey: Guid(1e543aed3bec32e40a16576fc41f20d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Swing 1.wav using Guid(1e543aed3bec32e40a16576fc41f20d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97c5d4594814a68539641ab3093f6d5') in 0.026616 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 10.wav
-  artifactKey: Guid(684700b64fd5849458b472968a094315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 10.wav using Guid(684700b64fd5849458b472968a094315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9715fd3ff88eba9ff66b458566b31040') in 0.024868 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Jump 6.wav
-  artifactKey: Guid(4e226b16843eaee4a965c0d4e51e5a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Jump 6.wav using Guid(4e226b16843eaee4a965c0d4e51e5a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ba3d9a46f0a89a93781a12f3907c65') in 0.033005 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 5.wav
-  artifactKey: Guid(f6022193c17b79a429e90cdf8d8a429e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 5.wav using Guid(f6022193c17b79a429e90cdf8d8a429e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c8184002b3618f57d7fcfb4b723dad') in 0.026656 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realisitc Kick 4.wav
-  artifactKey: Guid(c62a0b3c8558bdb43b25dcdbc20ac0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realisitc Kick 4.wav using Guid(c62a0b3c8558bdb43b25dcdbc20ac0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eab216d23dc92696850bc3daffbd6ee') in 0.023917 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 8.wav
-  artifactKey: Guid(4b8f749ae9b14b84f800cc59002f1bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 8.wav using Guid(4b8f749ae9b14b84f800cc59002f1bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '211ffcda4d9bdac62a81e5617cc8dcad') in 0.024193 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 6.wav
-  artifactKey: Guid(f6dbea8a60fdaf8409c3b12fbc607042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 6.wav using Guid(f6dbea8a60fdaf8409c3b12fbc607042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '164521946bef27239ea20a15f9bfe418') in 0.025288 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 1.wav
-  artifactKey: Guid(0e010c24aeb32c24ba1f43e99f63e40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 1.wav using Guid(0e010c24aeb32c24ba1f43e99f63e40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751d174e622ae6a2a34e47e936a00a6a') in 0.024577 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 2.wav
-  artifactKey: Guid(af5e6b67afc9aca47867f7aac5d4a108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 2.wav using Guid(af5e6b67afc9aca47867f7aac5d4a108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e39d8160161d5820117f6d2126098c8b') in 0.028840 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 18.wav
-  artifactKey: Guid(ae94a34ccfbfe2d488e78cb25547863a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 18.wav using Guid(ae94a34ccfbfe2d488e78cb25547863a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f6ee0e7710bd6beeb795830c160174') in 0.033694 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 5.wav
-  artifactKey: Guid(50593857c0e7acc4aa67bd055cbb7c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 5.wav using Guid(50593857c0e7acc4aa67bd055cbb7c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5d1418983b72070e6a00dd44db6c07e') in 0.035123 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 15.wav
-  artifactKey: Guid(00ff0804193a66d4ebd43b5832a69d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 15.wav using Guid(00ff0804193a66d4ebd43b5832a69d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927dc81ea4dbf3791b9be0513af454ab') in 0.036279 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 3.wav
-  artifactKey: Guid(33261bff6cd1e5645b05d9147434c3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realistic Punch 3.wav using Guid(33261bff6cd1e5645b05d9147434c3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2df5c604ab6566c1dad2622fa5eb30f') in 0.033566 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realisitc Kick 6.wav
-  artifactKey: Guid(8500c65cd94c51b4f80d96efc462a434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Realisitc Kick 6.wav using Guid(8500c65cd94c51b4f80d96efc462a434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fef91dda7fe2cca61cc98e0d0b60eb6d') in 0.071701 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 9.wav
-  artifactKey: Guid(3eafbbabdaaccfa4d87254e81603ab72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Punch Impact (Flesh) 9.wav using Guid(3eafbbabdaaccfa4d87254e81603ab72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c909f56c1c76ae202462000ce2b06e0') in 0.054148 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Swing 5.wav
-  artifactKey: Guid(6cc6e0f25881c904288f9a0a1099f6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/Ultimate SFX Bundle - HD Remaster/Fight sounds - HD Remake/Swing 5.wav using Guid(6cc6e0f25881c904288f9a0a1099f6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2674431f3f9496f1a7b8c048c6710004') in 0.034621 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.145685 seconds.
-  path: Assets/Packages/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat
-  artifactKey: Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Packages/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat using Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1347a82986c38cd4ee0048bbbc92cf23') in 0.150343 seconds 
+  Time since last request: 34741.644411 seconds.
+  path: Assets/Scripts/SoundController.cs
+  artifactKey: Guid(b7dffd1e43882094586e76c8cfaec432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SoundController.cs using Guid(b7dffd1e43882094586e76c8cfaec432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e8de539b4552633c24d1696feb28de8') in 0.022308 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005397 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.104 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1105ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (858ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (304ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (358ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (228ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3919.
+Memory consumption went from 133.4 MB to 133.3 MB.
+Total: 4.856400 ms (FindLiveObjects: 0.253700 ms CreateObjectMapping: 0.153700 ms MarkObjects: 4.419800 ms  DeleteObjects: 0.027400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005301 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.054 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1055ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (821ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (309ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (315ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3922.
+Memory consumption went from 133.3 MB to 133.3 MB.
+Total: 3.483500 ms (FindLiveObjects: 0.279200 ms CreateObjectMapping: 0.166100 ms MarkObjects: 3.015500 ms  DeleteObjects: 0.021900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006528 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.216 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1217ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (990ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (317ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (411ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (275ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 3925.
+Memory consumption went from 133.4 MB to 133.4 MB.
+Total: 4.102600 ms (FindLiveObjects: 0.260300 ms CreateObjectMapping: 0.161000 ms MarkObjects: 3.655600 ms  DeleteObjects: 0.024400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005881 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.168 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1169ms)
+		BeginReloadAssembly (159ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (886ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (341ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (346ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3928.
+Memory consumption went from 133.4 MB to 133.4 MB.
+Total: 2.879700 ms (FindLiveObjects: 0.273400 ms CreateObjectMapping: 0.181700 ms MarkObjects: 2.403600 ms  DeleteObjects: 0.020000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006400 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.147 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1148ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (901ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (328ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (361ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (238ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 3931.
+Memory consumption went from 133.3 MB to 133.3 MB.
+Total: 2.768500 ms (FindLiveObjects: 0.244200 ms CreateObjectMapping: 0.155700 ms MarkObjects: 2.345700 ms  DeleteObjects: 0.021900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005671 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.014 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1015ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (785ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (316ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3934.
+Memory consumption went from 133.4 MB to 133.4 MB.
+Total: 3.290600 ms (FindLiveObjects: 0.241000 ms CreateObjectMapping: 0.157300 ms MarkObjects: 2.870800 ms  DeleteObjects: 0.020600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008375 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.080 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1081ms)
+		BeginReloadAssembly (149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (817ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (310ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (329ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3937.
+Memory consumption went from 133.4 MB to 133.4 MB.
+Total: 3.133500 ms (FindLiveObjects: 0.277700 ms CreateObjectMapping: 0.180000 ms MarkObjects: 2.635800 ms  DeleteObjects: 0.039300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005252 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.060 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1060ms)
+		BeginReloadAssembly (140ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (818ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (303ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (317ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 3940.
+Memory consumption went from 133.3 MB to 133.3 MB.
+Total: 2.994900 ms (FindLiveObjects: 0.243600 ms CreateObjectMapping: 0.146900 ms MarkObjects: 2.583500 ms  DeleteObjects: 0.020200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005642 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.063 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1063ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (824ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (299ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (324ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 3943.
+Memory consumption went from 133.4 MB to 133.4 MB.
+Total: 3.252100 ms (FindLiveObjects: 0.265700 ms CreateObjectMapping: 0.178300 ms MarkObjects: 2.785400 ms  DeleteObjects: 0.021800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 803.073733 seconds.
+  path: Assets/Packages/PolygonDungeon/Models/SM_Trap_Swing_Blade_01.fbx
+  artifactKey: Guid(c1de42800dba83442959031eacb99495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/PolygonDungeon/Models/SM_Trap_Swing_Blade_01.fbx using Guid(c1de42800dba83442959031eacb99495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb5d787100b55485d89bffcff37c29b') in 0.198865 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005510 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.235 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1236ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (977ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (288ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (477ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (308ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3958.
+Memory consumption went from 138.0 MB to 138.0 MB.
+Total: 3.005600 ms (FindLiveObjects: 0.306100 ms CreateObjectMapping: 0.213800 ms MarkObjects: 2.460200 ms  DeleteObjects: 0.024400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008009 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Development\MiniProject-Noah\MiniProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.267 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1268ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1020ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (332ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (456ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (296ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 3961.
+Memory consumption went from 138.0 MB to 138.0 MB.
+Total: 3.141200 ms (FindLiveObjects: 0.285100 ms CreateObjectMapping: 0.170200 ms MarkObjects: 2.656900 ms  DeleteObjects: 0.027800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

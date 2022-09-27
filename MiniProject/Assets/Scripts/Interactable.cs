@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string interactString = "Talk";
+    public string message = "Welcome to my world, traveler...";
+
+    private GameController gc;
+
+    private void Start()
     {
-        
+        gc = FindObjectOfType<GameController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if(Vector3.Distance(gc.playerController.model.transform.position, transform.position) < 2)
+        {
+            return;
+        }
+    }
+
+    public void PerformAction()
+    {
+        gc.PlayMessage(message);
     }
 }

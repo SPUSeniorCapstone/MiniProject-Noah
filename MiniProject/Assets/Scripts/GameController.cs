@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -12,6 +13,10 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private bool paused = false;
 
+    public GameObject messageBox;
+    public PlayerController playerController;
+
+    private float unloadMessageBoxAt;
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
@@ -27,5 +32,18 @@ public class GameController : MonoBehaviour
             }
             
         }
+
+        if(messageBox.activeSelf && Time.time > unloadMessageBoxAt)
+        {
+            messageBox.SetActive(false);
+        }
+    }
+
+    public void PlayMessage(string message)
+    {
+        messageBox.SetActive(true);
+        var m = messageBox.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
+        m.text = message;
+        unloadMessageBoxAt = Time.time + 15;
     }
 }

@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeedModifier = 0.7f;
     public float sprintModifier = 2;
 
+    public float interactDistance = 1;
+
     public Camera cam;
     public PlayerModel model;
     public Terrain terrain;
@@ -33,6 +35,11 @@ public class PlayerController : MonoBehaviour
 
     private bool testAxis_Jump = false;
 
+    public SoundController movementAudio;
+    public SoundController attackAudio;
+    public SoundController voiceAudio;
+    
+
     void Start()
     {
         if (cam == null)
@@ -51,6 +58,11 @@ public class PlayerController : MonoBehaviour
         gc = FindObjectOfType<GameController>();
 
         audioSource = model.GetComponent<AudioSource>();
+
+        if(attackAudio == null)
+        {
+            Debug.LogError("Missing SoundController animationAuidio");
+        }
     }
 
     // Update is called once per frame
@@ -58,10 +70,26 @@ public class PlayerController : MonoBehaviour
     {
         if(!gc.Paused)
             HandelInput();
+
+        Ray ray = new Ray(model.transform.position, model.transform.forward * interactDistance);
+        RaycastHit hit;
+        if(Physics.Raycast(ray, out hit))
+        {
+            var i = hit.transform.GetComponent<Interactable>();
+            if(i != null)
+            {
+                Debug.Log(i.interactString);
+            }
+        }
     }
 
     void HandelInput()
     {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+
+        }
+
         float speed;
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -74,9 +102,12 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            model.animatorState = PlayerModel.AnimatorState.MELEE_ATTACK_1H;
-            audioSource.Play();
-            _stoppedTill = Time.time + model.GetStateTransitionTime(PlayerModel.AnimatorState.MELEE_ATTACK_1H);
+            if (!InteractWithObject())
+            {
+                model.animatorState = PlayerModel.AnimatorState.MELEE_ATTACK_1H;
+                attackAudio.PlaySound("SwordSwing");
+                _stoppedTill = Time.time + model.GetStateTransitionTime(PlayerModel.AnimatorState.MELEE_ATTACK_1H);
+            }
         }
         if (_stoppedTill > Time.time)
         {
@@ -90,6 +121,7 @@ public class PlayerController : MonoBehaviour
             _jump = Input.GetAxis("Jump") * jumpHeight;
             _jumpTime = Time.time;
             testAxis_Jump = true;
+            movementAudio.PlaySound("Jump");
         }
 
         if (Input.GetAxis("Jump") == 0 && testAxis_Jump)
@@ -134,6 +166,7 @@ public class PlayerController : MonoBehaviour
         if (h.magnitude > 0.01 && model.GetComponent<CharacterController>().isGrounded)
         {
             model.animatorState = PlayerModel.AnimatorState.RUN_FORWARD;
+            movementAudio.PlaySound("FootSteps");
         }
         else if(model.GetComponent<CharacterController>().isGrounded)
         {
@@ -148,6 +181,22 @@ public class PlayerController : MonoBehaviour
         RotateTowardsMovement(model.transform.position + move);
 
         model.GetComponent<CharacterController>().Move(move);
+    }
+
+    bool InteractWithObject()
+    {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            var i = hit.transform.GetComponent<Interactable>();
+            if (i != null)
+            {
+                gc.PlayMessage(i.message);
+                return true;
+            }
+        }
+        return false;
     }
 
     bool CheckAngle(Vector3 newPos)
