@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeedModifier = 0.7f;
     public float sprintModifier = 2;
 
+    public bool attacking = false;
+
     public float interactDistance = 1;
 
     public Camera cam;
@@ -38,8 +40,10 @@ public class PlayerController : MonoBehaviour
     public SoundController movementAudio;
     public SoundController attackAudio;
     public SoundController voiceAudio;
-    
 
+    public Weapon weapon;
+
+    #region UnityMessages
     void Start()
     {
         if (cam == null)
@@ -59,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
         audioSource = model.GetComponent<AudioSource>();
 
-        if(attackAudio == null)
+        if (attackAudio == null)
         {
             Debug.LogError("Missing SoundController animationAuidio");
         }
@@ -68,21 +72,21 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!gc.Paused)
+        if (!gc.Paused)
             HandelInput();
 
         Ray ray = new Ray(model.transform.position, model.transform.forward * interactDistance);
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit))
         {
             var i = hit.transform.GetComponent<Interactable>();
-            if(i != null)
+            if (i != null)
             {
                 Debug.Log(i.interactString);
             }
         }
     }
-
+    #endregion
     void HandelInput()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -102,20 +106,24 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (!InteractWithObject())
+            if (!InteractWithObject() && _stoppedTill < Time.time)
             {
                 model.animatorState = PlayerModel.AnimatorState.MELEE_ATTACK_1H;
                 attackAudio.PlaySound("SwordSwing");
                 _stoppedTill = Time.time + model.GetStateTransitionTime(PlayerModel.AnimatorState.MELEE_ATTACK_1H);
+                attacking = true;
             }
         }
         if (_stoppedTill > Time.time)
         {
             return;
+        }else if (attacking)
+        {
+            attacking = false;  
         }
 
         Vector3 move = Vector3.zero;
-        if(Input.GetAxis("Jump") != 0 && model.GetComponent<CharacterController>().isGrounded && _jump == 0 && _jumpTime < Time.time - jumpCooldown )
+        if (Input.GetAxis("Jump") != 0 && model.GetComponent<CharacterController>().isGrounded && _jump == 0 && _jumpTime < Time.time - jumpCooldown)
         {
             model.animatorState = PlayerModel.AnimatorState.JUMP;
             _jump = Input.GetAxis("Jump") * jumpHeight;
@@ -168,7 +176,7 @@ public class PlayerController : MonoBehaviour
             model.animatorState = PlayerModel.AnimatorState.RUN_FORWARD;
             movementAudio.PlaySound("FootSteps");
         }
-        else if(model.GetComponent<CharacterController>().isGrounded)
+        else if (model.GetComponent<CharacterController>().isGrounded)
         {
             model.animatorState = PlayerModel.AnimatorState.IDLE;
         }
