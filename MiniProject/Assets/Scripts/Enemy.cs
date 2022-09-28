@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -14,6 +15,13 @@ public class Enemy : MonoBehaviour
 
     private float _stoppedTill = 0;
 
+    private Vector3 knockbackVelocity = Vector3.zero;
+
+    public bool ragdoll = false;
+
+
+    public bool dead = false;
+
     //Components
     private CharacterController characterController;
 
@@ -21,6 +29,7 @@ public class Enemy : MonoBehaviour
     private GameController gc;
     public GameObject target;
     private PlayerModel model;
+    public GameObject root;
 
 
     void Start()
@@ -34,15 +43,78 @@ public class Enemy : MonoBehaviour
         gc = FindObjectOfType<GameController>();
 
         model = GetComponent<PlayerModel>();
+
+
     }
 
     void Update()
     {
-        MoveTowardPlayer();
+        if (dead)
+        {
+            if (characterController.isGrounded)
+            {
+                EnableRagdoll();
+                StartCoroutine(DestroyAfter(10));
+            }
+            return;
+        }
+        if (knockbackVelocity.magnitude == 0)
+        {
+            MoveTowardPlayer();
+        }
+        characterController.Move(knockbackVelocity * Time.deltaTime);
+        
+        if(knockbackVelocity.magnitude <= 0.2)
+        {
+            knockbackVelocity = Vector3.zero;
+        }
+        else
+        {
+            knockbackVelocity -= knockbackVelocity.normalized * 0.05f;
+        }
+    }
+
+    public void EnemyHit(float damage, float knockback, float knockHeight = 0.7f)
+    {
+        if(dead){
+            return;
+        }
+
+        health -= damage;
+        _stoppedTill = Time.time + immunityTime;
+
+        Vector3 moveDir = gc.playerController.model.transform.position - transform.position;
+        moveDir.y = 0;
+        var move = -moveDir.normalized * knockback;
+        move.y = knockHeight;
+
+        knockbackVelocity = move;
+
+        if (health <= 0)
+        {
+            if (ragdoll)
+            {
+                dead = true;
+                EnableRagdoll();
+                //_stoppedTill = Time.time + 0.2f;
+
+            }
+            else
+            {
+                Destroy(this.gameObject);
+                return;
+            }
+
+        }
+        Debug.Log("Enemy Hit");
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (dead)
+        {
+            return;
+        }
         if (other.transform.tag == "Weapon")
         {
             var obj = other.transform.GetComponent<Weapon>();
@@ -50,15 +122,8 @@ public class Enemy : MonoBehaviour
             {
                 if (gc.playerController.attacking && _stoppedTill < Time.time)
                 {
-                    health -= obj.damage;
-                    _stoppedTill = Time.time + immunityTime;
+                    EnemyHit(obj.damage, obj.knockback);
 
-                    if(health <= 0)
-                    {
-                        Destroy(this.gameObject);
-                        return;
-                    }
-                    Debug.Log("Enemy Hit");
                 }
             }
             else
@@ -70,6 +135,11 @@ public class Enemy : MonoBehaviour
 
     private void MoveTowardPlayer()
     {
+        if(Vector3.Distance(transform.position, target.transform.position) < 1)
+        {
+            model.animatorState = PlayerModel.AnimatorState.MELEE_ATTACK_1H;
+            return;
+        }
         var move = target.transform.position - transform.position;
         move = move.normalized;
 
@@ -90,5 +160,19 @@ public class Enemy : MonoBehaviour
 
         rotation = Quaternion.Slerp(rotation, lookRotation, Time.deltaTime * speed);
         model.transform.rotation = rotation;
+    }
+
+    private void EnableRagdoll()
+    {
+        GetComponent<Animator>().enabled = false;
+        characterController.enabled = false;
+        root.SetActive(true);
+        root.transform.GetChild(0).GetComponent<Rigidbody>().velocity += knockbackVelocity;
+    }
+
+    IEnumerator DestroyAfter(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(this.gameObject);
     }
 }

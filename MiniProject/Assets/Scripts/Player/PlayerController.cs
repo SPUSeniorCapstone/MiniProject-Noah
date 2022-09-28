@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class PlayerController : MonoBehaviour
 {
@@ -91,7 +94,15 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-
+            var enemies = FindObjectsOfType<Enemy>();
+            foreach (var enemy in enemies)
+            {
+                var dist = Vector3.Distance(enemy.transform.position, model.transform.position);
+                if (dist < 5)
+                {
+                    enemy.EnemyHit(10, 1/(dist * dist), 0f);
+                }
+            }
         }
 
         float speed;
@@ -186,9 +197,22 @@ public class PlayerController : MonoBehaviour
             move *= jumpSpeedModifier;
         }
 
-        RotateTowardsMovement(model.transform.position + move);
+        if(move.magnitude != 0)
+        {
+            RotateTowards(model.transform.position + move);
+            model.GetComponent<CharacterController>().Move(move);
+        }
+        else
+        {
+            var enemies = FindObjectsOfType<Enemy>();
+            if(enemies.Length > 0)
+            {
+                Enemy e = enemies.Aggregate((minItem, nextItem) => Vector3.Distance(minItem.transform.position, model.transform.position) < Vector3.Distance(nextItem.transform.position, model.transform.position) ? minItem : nextItem);
 
-        model.GetComponent<CharacterController>().Move(move);
+                RotateTowards(e.transform.position);
+            }
+        }
+
     }
 
     bool InteractWithObject()
@@ -219,7 +243,7 @@ public class PlayerController : MonoBehaviour
         return true;
     }
 
-    void RotateTowardsMovement(Vector3 newPos)
+    void RotateTowards(Vector3 newPos)
     {
         if (newPos.x == model.transform.position.x && newPos.z == model.transform.position.z)
         {

@@ -77,7 +77,6 @@ public class CameraController : MonoBehaviour
     void RotateWithMouse()
     {
         float rotateAmount = (Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime);
-
         transform.RotateAround(playerModel.transform.position, Vector3.up, rotateAmount);
     }
 

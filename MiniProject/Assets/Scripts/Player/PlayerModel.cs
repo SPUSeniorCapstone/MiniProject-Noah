@@ -86,7 +86,7 @@ public class PlayerModel : MonoBehaviour
     {
         if (s == AnimatorState.IDLE) { return 0f; }
         if (s == AnimatorState.RUN_FORWARD) { return 0f; }
-        if (s == AnimatorState.MELEE_ATTACK_1H) { return 0.9f; }
+        if (s == AnimatorState.MELEE_ATTACK_1H) { return 0.876f; }
         if (s == AnimatorState.JUMP) { return 0.7f; }
 
         return 0f;
