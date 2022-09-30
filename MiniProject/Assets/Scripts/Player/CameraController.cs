@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public PlayerModel playerModel;
+    public GameObject player;
     public float autoRotateSpeed = 1;
+    public float modelHeight = 1.5f;
 
     public float rotateSpeed = 1;
     public float zoomSpeed = 1;
@@ -77,14 +78,14 @@ public class CameraController : MonoBehaviour
     void RotateWithMouse()
     {
         float rotateAmount = (Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime);
-        transform.RotateAround(playerModel.transform.position, Vector3.up, rotateAmount);
+        transform.RotateAround(player.transform.position, Vector3.up, rotateAmount);
     }
 
     void RotateTowardsPlayer()
     {
         Quaternion rotation = transform.rotation;
 
-        Vector3 target = playerModel.transform.position + (Vector3.up * playerModel.modelHeight);
+        Vector3 target = player.transform.position + (Vector3.up * modelHeight);
 
         Vector3 direction = target - transform.position;
         var lookRotation = Quaternion.LookRotation(direction);
@@ -96,7 +97,7 @@ public class CameraController : MonoBehaviour
     void MoveTowardsPlayer()
     {
         Vector3 newPosition = transform.position;
-        Vector3 target = playerModel.transform.position;
+        Vector3 target = player.transform.position;
         
 
 
