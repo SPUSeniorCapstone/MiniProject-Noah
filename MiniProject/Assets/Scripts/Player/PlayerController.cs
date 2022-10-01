@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
                 var dist = Vector3.Distance(enemy.transform.position, model.transform.position);
                 if (dist < 5)
                 {
-                    enemy.EnemyHit(10, 1/(dist * dist), 0f);
+                    //enemy.EnemyHit(10, 1/(dist * dist), 0f);
                 }
             }
         }

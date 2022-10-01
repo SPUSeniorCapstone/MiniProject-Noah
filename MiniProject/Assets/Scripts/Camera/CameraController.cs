@@ -122,4 +122,20 @@ public class CameraController : MonoBehaviour
         newPosition = Vector3.Slerp(transform.position, newPosition, moveSpeed * Time.deltaTime);
         transform.position = newPosition;
     }
+
+    public Vector3 GetXZForward()
+    {
+        Vector3 dir = transform.forward;
+        dir.y = 0;
+        dir = dir.normalized;
+        return dir;
+    }
+
+    public Vector3 GetXZRight()
+    {
+        Vector3 dir = transform.right;
+        dir.y = 0;
+        dir = dir.normalized;
+        return dir;
+    }
 }

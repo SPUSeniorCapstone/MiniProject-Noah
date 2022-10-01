@@ -3897,10 +3897,10 @@ GameObject:
   - component: {fileID: 8310712000602730033}
   - component: {fileID: 8310712001097770986}
   - component: {fileID: 8310712001097770987}
-  - component: {fileID: 8310712001097770985}
+  - component: {fileID: 446674367}
   m_Layer: 0
   m_Name: Enemy_Skeleton_Ragdoll
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3987,14 +3987,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45f4c40a1ca31dc409c9e05f427748f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  useGravity: 1
+  rotateSpeed: 10
+  lockHorizontalRotation: 1
   health: 5
+  state: 0
+  dead: 0
+  speed: 3
   immunityTime: 0.7
   ragdoll: 1
-  dead: 0
+  jumpHeight: 1
+  jumpCoolDown: 1
   target: {fileID: 0}
   root: {fileID: 8310712000595596633}
---- !u!114 &8310712001097770985
+--- !u!114 &446674367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4003,14 +4009,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8310712000595585513}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b67ffbbb9690e04b88931d2211394e2, type: 3}
+  m_Script: {fileID: 11500000, guid: b199bcdad7213924fbba66971f82a10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelHeight: 1
-  animator: {fileID: 0}
-  controller: {fileID: 0}
-  clips:
-  - {fileID: 8300000, guid: 9d5a3465fdc78624b88aeab7a31f3e4b, type: 3}
+  lockTill: 0
 --- !u!1 &8310712000595587927
 GameObject:
   m_ObjectHideFlags: 0

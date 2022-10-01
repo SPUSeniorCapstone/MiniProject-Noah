@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
 
     public GameObject messageBox;
     public PlayerController playerController;
+    public CameraController cameraController;
 
     private float unloadMessageBoxAt;
     private void Update()

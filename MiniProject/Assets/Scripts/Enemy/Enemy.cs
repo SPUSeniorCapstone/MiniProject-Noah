@@ -4,12 +4,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class Enemy : MonoBehaviour
+public class Enemy : Entity
 {
     //Fields
     public float speed = 1;
-
-    public float health = 2;
 
     public float immunityTime = 0.3f;
 
@@ -19,11 +17,16 @@ public class Enemy : MonoBehaviour
 
     public bool ragdoll = false;
 
+    public float jumpHeight = 1;
+    public float jumpCoolDown = 1f;
+    private float lockJumpTill = 0;
 
-    public bool dead = false;
+    private Vector3 lastPos = Vector3.zero;
 
     //Components
     private CharacterController characterController;
+
+
 
     //Cached Object
     private GameController gc;
@@ -32,11 +35,12 @@ public class Enemy : MonoBehaviour
     public GameObject root;
 
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         if(target == null)
         {
-            target = FindObjectOfType<PlayerController>().model.gameObject;
+            target = FindObjectOfType<Player>().gameObject;
         }
 
         characterController = GetComponent<CharacterController>();
@@ -47,8 +51,9 @@ public class Enemy : MonoBehaviour
 
     }
 
-    void Update()
+    protected override void Update()
     {
+        base.Update();
         if (dead)
         {
             if (characterController.isGrounded)
@@ -58,22 +63,18 @@ public class Enemy : MonoBehaviour
             }
             return;
         }
-        if (knockbackVelocity.magnitude == 0)
+        if(knockback.magnitude > 0)
         {
-            MoveTowardPlayer();
-        }
-        characterController.Move(knockbackVelocity * Time.deltaTime);
-        
-        if(knockbackVelocity.magnitude <= 0.2)
-        {
-            knockbackVelocity = Vector3.zero;
+            state = EntityAnimator.AnimatorState.GET_HIT;
         }
         else
         {
-            knockbackVelocity -= knockbackVelocity.normalized * 0.05f;
+            MoveTowardPlayer();
         }
+        lastPos = transform.position;
     }
 
+    /*
     public void EnemyHit(float damage, float knockback, float knockHeight = 0.7f)
     {
         if(dead){
@@ -108,7 +109,7 @@ public class Enemy : MonoBehaviour
         }
         Debug.Log("Enemy Hit");
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if (dead)
@@ -131,35 +132,43 @@ public class Enemy : MonoBehaviour
                 Debug.LogError("GameObject " + other.transform.name + " was tagged as a 'Weapon', but is missing the relevant component");
             }
         }
-    }
+    }*/
 
     private void MoveTowardPlayer()
     {
-        if(Vector3.Distance(transform.position, target.transform.position) < 1)
+        if (character.isGrounded)
         {
-            model.animatorState = PlayerModel.AnimatorState.MELEE_ATTACK_1H;
+            state = EntityAnimator.AnimatorState.RUN_FORWARD;
+        }
+        else
+        {
+            state = EntityAnimator.AnimatorState.FALLING_LOOP;
+        }
+
+        if (Vector3.Distance(transform.position, target.transform.position) < 1)
+        {
+            state = EntityAnimator.AnimatorState.PUNCH_LEFT;
             return;
         }
+        if(Vector3.Distance(lastPos, transform.position) < (speed * Time.deltaTime)/3 && lockJumpTill < Time.time && character.isGrounded && Vector3.Distance(transform.position, target.transform.position) > 2)
+        {
+            if (state == EntityAnimator.AnimatorState.RUN_FORWARD || state == EntityAnimator.AnimatorState.SPRINT)
+            {
+                state = EntityAnimator.AnimatorState.JUMP_WHILE_RUNNING;
+            }
+            else
+            {
+                state = EntityAnimator.AnimatorState.JUMP;
+            }
+            Jump(jumpHeight);
+            lockJumpTill = Time.time + jumpCoolDown;
+        }
+
         var move = target.transform.position - transform.position;
         move = move.normalized;
 
-        RotateTowardsMovement(transform.position + move);
+        Move(move * speed * Time.deltaTime);
 
-        characterController.Move(move * speed * Time.deltaTime);
-        model.animatorState = PlayerModel.AnimatorState.RUN_FORWARD;
-    }
-
-    void RotateTowardsMovement(Vector3 newPos)
-    {
-        newPos.y = model.transform.position.y;
-        Quaternion rotation = model.transform.rotation;
-
-        Vector3 direction = newPos - model.transform.position;
-        var lookRotation = Quaternion.LookRotation(direction);
-
-
-        rotation = Quaternion.Slerp(rotation, lookRotation, Time.deltaTime * speed);
-        model.transform.rotation = rotation;
     }
 
     private void EnableRagdoll()
