@@ -31,7 +31,6 @@ public class Enemy : Entity
     //Cached Object
     private GameController gc;
     public GameObject target;
-    private PlayerModel model;
     public GameObject root;
 
 
@@ -45,8 +44,6 @@ public class Enemy : Entity
 
         characterController = GetComponent<CharacterController>();
         gc = FindObjectOfType<GameController>();
-
-        model = GetComponent<PlayerModel>();
 
 
     }
@@ -73,67 +70,6 @@ public class Enemy : Entity
         }
         lastPos = transform.position;
     }
-
-    /*
-    public void EnemyHit(float damage, float knockback, float knockHeight = 0.7f)
-    {
-        if(dead){
-            return;
-        }
-
-        health -= damage;
-        _stoppedTill = Time.time + immunityTime;
-
-        Vector3 moveDir = gc.playerController.model.transform.position - transform.position;
-        moveDir.y = 0;
-        var move = -moveDir.normalized * knockback;
-        move.y = knockHeight;
-
-        knockbackVelocity = move;
-
-        if (health <= 0)
-        {
-            if (ragdoll)
-            {
-                dead = true;
-                EnableRagdoll();
-                //_stoppedTill = Time.time + 0.2f;
-
-            }
-            else
-            {
-                Destroy(this.gameObject);
-                return;
-            }
-
-        }
-        Debug.Log("Enemy Hit");
-    }
-    
-    private void OnTriggerEnter(Collider other)
-    {
-        if (dead)
-        {
-            return;
-        }
-        if (other.transform.tag == "Weapon")
-        {
-            var obj = other.transform.GetComponent<Weapon>();
-            if (obj != null )
-            {
-                if (gc.playerController.attacking && _stoppedTill < Time.time)
-                {
-                    EnemyHit(obj.damage, obj.knockback);
-
-                }
-            }
-            else
-            {
-                Debug.LogError("GameObject " + other.transform.name + " was tagged as a 'Weapon', but is missing the relevant component");
-            }
-        }
-    }*/
-
     private void MoveTowardPlayer()
     {
         if (character.isGrounded)
@@ -173,10 +109,23 @@ public class Enemy : Entity
 
     private void EnableRagdoll()
     {
-        GetComponent<Animator>().enabled = false;
-        characterController.enabled = false;
-        root.SetActive(true);
-        root.transform.GetChild(0).GetComponent<Rigidbody>().velocity += knockbackVelocity;
+        StartCoroutine(Wait());
+
+        IEnumerator Wait()
+        {
+            yield return new WaitForSeconds(0);
+            GetComponent<Animator>().enabled = false;
+            characterController.enabled = false;
+            root.SetActive(true);
+
+            foreach (var item in root.GetComponentsInChildren<Rigidbody>())
+            {
+                var k = knockback * 2;
+                var g = -Vector3.up * 15;
+                item.AddForce(k);
+            }
+            //root.transform.GetChild(0).GetComponent<Rigidbody>().velocity += knockback;
+        }
     }
 
     IEnumerator DestroyAfter(float time)

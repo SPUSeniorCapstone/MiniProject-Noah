@@ -16,6 +16,9 @@ public class Entity : MonoBehaviour
     public EntityAnimator.AnimatorState state;
     public bool dead = false;
 
+    public Transform weapons;
+    protected Weapon weapon;
+    public int weaponIndex = 0;
 
     //Private 
     Vector3 move = Vector3.zero;
@@ -31,6 +34,18 @@ public class Entity : MonoBehaviour
     {
         gameController = FindObjectOfType<GameController>();
         character = GetComponent<CharacterController>();
+
+        if(weapons != null)
+        {
+
+            if (weaponIndex >= weapons.childCount || weaponIndex < 0)
+            {
+                weaponIndex = 0;
+            }
+            weapon = weapons.GetChild(weaponIndex).GetComponent<Weapon>();
+            weapon.gameObject.SetActive(true);
+        }
+
     }
 
     protected virtual void Update()
@@ -111,7 +126,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    void RotateTowards(Vector3 pos)
+    protected void RotateTowards(Vector3 pos)
     {
         if (lockHorizontalRotation)
         {
